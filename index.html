@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://kit.fontawesome.com/6c2de7690d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <img id="logo_alura" src="/img/Logo.png" alt="logo_alura">
+        <section id="encriptar_space_wraper">
+
+            <textarea name="encriptar_space" id="encriptar_textarea" cols="35" rows="14"
+                placeholder="Ingrese el texto aqui"></textarea>
+            <p id="important_msg"><i class="fa-solid fa-circle-exclamation"></i> solo letras minúsculas y sin
+                acentos
+            </p>
+            <div id="buttons_wrapper">
+                <button id="encriptar_btn" onclick="encriptarTexto()">Encriptar</button>
+                <button id="desencriptar_btn" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+
+        </section>
+        <section id="output_msg_container">
+
+            <textarea id="output_msg" rows="5"></textarea>
+            <img id="no_found_img" src="/img/Muñeco.png" alt="no_found_img">
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p id="msg_outputArea">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button id="copy_btn" onclick="copiarTexto()">Copiar</button>
+
+        </section>
+    </main>
+    <footer>&copy; Denis Pimentel Huamán - Lima, Perú 2024</footer>
+    <script src="/javascript/app.js"></script>
+</body>
+
+
+</html>

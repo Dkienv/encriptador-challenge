@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: rgb(98, 147, 198);
+    background: linear-gradient(0deg, rgba(98, 147, 198, 1) 0%, rgba(63, 189, 173, 1) 56%, rgba(98, 147, 198, 1) 100%);
+    display: flex;
+    min-height: calc(100vh - 20px);
+    /* para centrar mi main*/
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+/*-----------Encriptador area----------------*/
+#logo_alura {
+    object-fit: contain;
+    align-self: self-start;
+}
+
+#encriptar_space_wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 700px;
+}
+
+#encriptar_textarea {
+    border: none;
+    background-color: inherit;
+    padding: 12px 20px;
+    padding-top: 70px;
+    resize: none;
+    color: #0A3871;
+    font-size: 32px;
+    outline: none;
+    text-transform: lowercase;
+
+}
+
+#encriptar_textarea::placeholder {
+    color: darkblue;
+    font-size: 32px;
+    font-weight: 300;
+    padding-top: 40px;
+}
+
+
+#important_msg {
+    font-size: 12px;
+    color: rgb(65, 64, 64);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#buttons_wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    width: 250px;
+    padding: 20px;
+    border-radius: 24px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#encriptar_btn {
+    color: white;
+    background-color: darkblue;
+}
+
+#desencriptar_btn {
+    color: darkblue;
+    background-color: whitesmoke;
+    border: 1px solid darkblue;
+}
+
+/********************Output properties*****************************  */
+#output_msg_container {
+    max-width: 400px;
+    height: 700px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 13px 0px 29px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 0px 29px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 0px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+#output_msg {
+    display: none;
+    min-width: 400px;
+    margin-top: 0px;
+    border: none;
+    height: 90%;
+    color: rgb(112, 97, 97);
+    padding: 24px 30px;
+    resize: none;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: inherit;
+    text-transform: lowercase;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+
+#no_found_img {
+    width: 336px;
+    height: 304px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    padding: 0 60px;
+    text-align: center;
+    margin: 12px;
+    font-size: 24px;
+}
+
+#output_msg_container>p {
+    font-size: 16px;
+    color: rgb(80, 79, 79);
+    padding: 0 30px;
+    text-align: center;
+}
+
+#copy_btn {
+    display: none;
+    color: darkblue;
+    font-weight: 500;
+    bottom: 0;
+    border: 1px solid darkblue;
+    margin-bottom: 10px;
+
+}
+
+/*-------------Media queries--------------------------------*/
+@media (width <=1210px) {
+    main {
+        flex-direction: column;
+        min-height: 95vh;
+        align-items: center;
+
+    }
+
+    #logo_alura {
+        margin-top: 15px;
+
+    }
+
+    #encriptar_space_wraper {
+        align-items: center;
+    }
+
+    #important_msg {
+        align-self: start;
+        margin-left: 50px;
+    }
+
+    #output_msg_container {
+        margin-top: 50px;
+        min-width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    #output_msg {
+        min-height: 50px;
+        min-width: inherit;
+        resize: vertical;
+        padding: 0px 30px;
+        margin: 0;
+    }
+
+    #copy_btn {
+        width: 90%;
+    }
+
+    #no_found_img {
+        display: none;
+    }
+
+
+}
+
+@media (width <=600px) {
+    main {
+        min-width: 100vw;
+    }
+
+    #encriptar_textarea {
+        max-width: 350px;
+    }
+
+    #buttons_wrapper {
+        flex-direction: column;
+    }
+
+    #output_msg {
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
