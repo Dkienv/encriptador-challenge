@@ -159,7 +159,7 @@ h3 {
         flex-direction: column;
         min-height: 95vh;
         align-items: center;
-
+        margin-bottom: 20px;
     }
 
     #logo_alura {
@@ -193,6 +193,7 @@ h3 {
 
     #copy_btn {
         width: 90%;
+
     }
 
     #no_found_img {
@@ -220,23 +221,6 @@ h3 {
         resize: vertical;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
